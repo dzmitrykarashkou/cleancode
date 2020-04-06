@@ -96,12 +96,6 @@ public class Airport {
         return this;
     }
 
-
-    /**
-     * Sorts by max speed
-     *
-     * @return Airport
-     */
     public Airport sortByMaxSpeed() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane o1, Plane o2) {

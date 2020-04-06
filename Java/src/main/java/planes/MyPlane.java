@@ -5,5 +5,5 @@ public class MyPlane  extends Plane {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
     }
 
-    //TODO implement it later
+    //TODO implement it later, becasue this functionality don't need yet
 }
