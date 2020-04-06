@@ -34,20 +34,6 @@ public class AirportTest {
     private static PassengerPlane maxPassengerCapacityPlane = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242);
 
     @Test
-    public void hasTransportMilitaryPlanes() {
-        Airport airport = new Airport(planes);
-        List<MilitaryPlane> transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
-        boolean hasTransportMilitaryPlane = false;
-        for (MilitaryPlane militaryPlane : transportMilitaryPlanes) {
-            if ((militaryPlane.getType() == MilitaryType.TRANSPORT)) {
-                hasTransportMilitaryPlane = true;
-                break;
-            }
-        }
-        Assert.assertEquals(hasTransportMilitaryPlane, true);
-    }
-
-    @Test
     public void getMaxPassengerCapacityPlane() {
         System.out.println("getMaxPassengerCapacityPlane started!");
         Airport airport = new Airport(planes);
